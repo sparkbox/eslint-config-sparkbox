@@ -16,5 +16,12 @@
     "url": "https://github.com/sparkbox/eslint-config-sparkbox"
   },
   "author": "Sparkbox",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-flowtype": "^2.20.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
+  }
 }
