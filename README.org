@@ -3,10 +3,10 @@
 
 *Install*
 1. ~yarn add eslint-config-sparkbox~
-  - Depending on your editor setup you may need the following dependencies install globally through `npm`
-  -  #+BEGIN_SRC shell
-       npm i eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import eslint-plugin-flowtype --save-dev
-     #+END_SRC
+  - Depending on your editor setup you may need the following dependencies installed globally (~-g~) through `npm`.
+    #+BEGIN_SRC shell
+      npm i eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import eslint-plugin-flowtype --save-dev
+    #+END_SRC
 2. Use ~extends~ [[http://eslint.org/docs/developer-guide/shareable-configs#using-a-shareable-config][syntax]] in your ~eslint~ config.
 3. ?
 4. 💰
@@ -16,4 +16,4 @@
 {
   "extends": "sparkbox"
 }
-#+EN
+#+END_SRC
