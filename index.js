@@ -17,12 +17,14 @@ module.exports = {
       "react/require-extension": 0,
       "flowtype/define-flow-type": 1,
       "flowtype/use-flow-type": 1,
-      "arrow-body-style": [2, "always"],
+      "arrow-body-style": [2, "as-needed"],
       "react/no-did-mount-set-state": 0,
       "import/no-mutable-exports": 0,
       "import/no-extraneous-dependencies": 0,
       "no-console": 0,
       "strict": 0,
-      "new-cap": [2, {"capIsNewExceptions": ["Router"]}]
+      "new-cap": [2, {"capIsNewExceptions": ["Router"]}],
+      "import/extensions": 0,
+      "import/prefer-default-export": 0
     }
 }
