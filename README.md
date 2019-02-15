@@ -1,5 +1,7 @@
 # eslint-config-sparkbox
 
+[![CircleCI](https://circleci.com/gh/sparkbox/eslint-config-sparkbox/tree/master.svg?style=svg)](https://circleci.com/gh/sparkbox/eslint-config-sparkbox/tree/master)
+
 A set of eslint customizations that we use at Sparkbox. This config extends the [Airbnb config] and includes rule support for:
 
 * [React](https://github.com/yannickcr/eslint-plugin-react)
