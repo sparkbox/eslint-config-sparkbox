@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sparkbox",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "A set of eslint customizations that we use at Sparkbox.",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-flowtype": "^2.20.0",
     "eslint-plugin-import": "^2.0.1",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^6.4.1"
   },
   "peerDependencies": {
