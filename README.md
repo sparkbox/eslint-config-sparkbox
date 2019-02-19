@@ -23,9 +23,11 @@ Use [extends syntax] in your `.eslintrc` file:
 }
 ```
 
-_Note:_ Depending on your editor setup you may need the following dependencies installed globally (`-g`) through `npm`.
+**Install necessary plugins**
 
-`npm i eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import eslint-plugin-flowtype babel-eslint --save-dev`
+`npm i eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import eslint-plugin-flowtype babel-eslint --save-dev`
+
+_Note:_ Depending on your editor setup you may need [eslint-cli](https://github.com/eslint/eslint-cli) installed globally via `npm i eslint-cli -g`..
 
 [ESLint Sharable Config]: http://eslint.org/docs/developer-guide/shareable-configs
 [extends syntax]: http://eslint.org/docs/developer-guide/shareable-configs#using-a-shareable-config
