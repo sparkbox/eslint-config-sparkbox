@@ -1,6 +1,6 @@
 {
   "name": "@sparkbox/eslint-config-sparkbox",
-  "version": "0.5.6",
+  "version": "1.0.0",
   "description": "A set of eslint customizations that we use at Sparkbox.",
   "main": "index.js",
   "scripts": {
