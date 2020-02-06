@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-sparkbox",
-  "version": "0.5.6",
+  "name": "@sparkbox/eslint-config-sparkbox",
+  "version": "1.0.0",
   "description": "A set of eslint customizations that we use at Sparkbox.",
   "main": "index.js",
   "scripts": {
@@ -13,15 +13,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sparkbox/eslint-config-sparkbox"
+    "url": "git+https://github.com/sparkbox/eslint-config-sparkbox.git"
   },
-  "author": {
-    "name": "Sparkbox",
-    "email": "developman@heysparkbox.com",
-    "url": "https://seesparkbox.com"
-  },
+  "author": "Sparkbox <developman@heysparkbox.com> (https://seesparkbox.com)",
   "homepage": "https://github.com/sparkbox/eslint-config-sparkbox",
-  "bugs": "https://github.com/sparkbox/eslint-config-sparkbox/issues",
+  "bugs": {
+    "url": "https://github.com/sparkbox/eslint-config-sparkbox/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
