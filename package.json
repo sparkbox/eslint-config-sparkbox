@@ -4,7 +4,8 @@
   "description": "A set of eslint customizations that we use at Sparkbox.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "release": "standard-version && git push --follow-tags origin head"
   },
   "keywords": [
     "eslint",
@@ -30,7 +31,8 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.17.0",
     "mocha": "^7.0.0",
-    "react": "^16.8.2"
+    "react": "^16.8.2",
+    "standard-version": "^7.1.0"
   },
   "peerDependencies": {
     "eslint": ">= 3"

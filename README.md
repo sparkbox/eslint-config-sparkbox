@@ -1,8 +1,8 @@
-# eslint-config-sparkbox
+# `@sparkbox/eslint-config-sparkbox`
 
-[![CircleCI](https://circleci.com/gh/sparkbox/eslint-config-sparkbox/tree/master.svg?style=svg)](https://circleci.com/gh/sparkbox/eslint-config-sparkbox/tree/master)
+![current release](https://github.com/sparkbox/eslint-config-sparkbox/workflows/release/badge.svg)
 
-A set of eslint customizations that we use at Sparkbox. This config extends the [Airbnb config] and includes rule support for:
+A [sharable ESLint config] that we use at Sparkbox. This config extends the [Airbnb config] and includes rule support for:
 
 * [React](https://github.com/yannickcr/eslint-plugin-react)
 * [Flowtype](https://github.com/gajus/eslint-plugin-flowtype)
@@ -11,24 +11,26 @@ A set of eslint customizations that we use at Sparkbox. This config extends the 
 
 ## Usage
 
-`eslint-config-sparkbox` is designed as an [ESLint Sharable Config]
+`npm install --save-dev @sparkbox/eslint-config-sparkbox`
 
-`npm install --save-dev eslint-config-sparkbox` or `yarn add eslint-config-sparkbox`
+or
+
+`yarn add @sparkbox/eslint-config-sparkbox --dev`
 
 Use [extends syntax] in your `.eslintrc` file:
 
-```
+```json
 {
-  "extends": ["sparkbox"]
+  "extends": ["@sparkbox/eslint-config-sparkbox"]
 }
 ```
 
 **Install necessary plugins**
 
-`npm i eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import eslint-plugin-flowtype babel-eslint --save-dev`
+`npm i -D eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import eslint-plugin-flowtype babel-eslint`
 
-_Note:_ Depending on your editor setup you may need [eslint-cli](https://github.com/eslint/eslint-cli) installed globally via `npm i eslint-cli -g`..
+_Note:_ Depending on your editor setup you may need [eslint-cli](https://github.com/eslint/eslint-cli) installed globally via `npm i eslint-cli -g`.
 
-[ESLint Sharable Config]: http://eslint.org/docs/developer-guide/shareable-configs
+[sharable ESLint config]: http://eslint.org/docs/developer-guide/shareable-configs
 [extends syntax]: http://eslint.org/docs/developer-guide/shareable-configs#using-a-shareable-config
 [Airbnb config]: https://github.com/airbnb/javascript
