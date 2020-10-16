@@ -25,7 +25,7 @@ Use [extends syntax] in your `.eslintrc` file:
 }
 ```
 
-### Install necessary peer dependencies**
+### Install necessary peer dependencies
 
 `npm i -D eslint`
 
