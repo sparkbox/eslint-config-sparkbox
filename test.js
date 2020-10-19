@@ -9,9 +9,10 @@ const lint = text => cli.executeOnText(text);
 
 describe('Non-react JS', function() {
   it('Will pass', function() {
-    const test = lint(`
-const foo = 'foo';
-window.location(foo);\n`);
+    const test = lint(
+`const foo = 'foo';
+window.location(foo);\n`
+  );
 
     const message = test.errorCount > 0 && test.results[0].messages[0].message;
 
@@ -21,8 +22,8 @@ window.location(foo);\n`);
 
 describe('React JS', function() {
   it('Will pass', function() {
-    const test = cli.executeOnText(`
-import React, { Component } from 'react';
+    const test = cli.executeOnText(
+`import React, { Component } from 'react';
 
 export class Foo extends Component {
   constructor(props) {
@@ -33,8 +34,8 @@ export class Foo extends Component {
   render() {
     return <p>Foo</p>;
   }
-}
-`);
+}\n`
+    );
 
     const message = test.errorCount > 0 && test.results[0].messages[0].message;
 
