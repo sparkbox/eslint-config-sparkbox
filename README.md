@@ -25,9 +25,9 @@ Use [extends syntax] in your `.eslintrc` file:
 }
 ```
 
-### Install necessary peer dependencies
+### Install necessary plugins
 
-`npm i -D eslint`
+`npm i -D eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import eslint-plugin-flowtype babel-eslint`
 
 _Note:_ Depending on your editor setup you may need [eslint-cli](https://github.com/eslint/eslint-cli) installed globally via `npm i eslint-cli -g`.
 
