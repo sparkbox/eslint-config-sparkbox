@@ -4,8 +4,7 @@ module.exports = {
     "plugins": [
         "react",
         "jsx-a11y",
-        "import",
-        "flowtype"
+        "import"
     ],
     "env": {
       "node": true,
@@ -14,8 +13,6 @@ module.exports = {
     "rules": {
       "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
       "react/require-extension": 0,
-      "flowtype/define-flow-type": 1,
-      "flowtype/use-flow-type": 1,
       "arrow-body-style": [2, "as-needed"],
       "react/no-did-mount-set-state": 0,
       "import/no-mutable-exports": 0,
