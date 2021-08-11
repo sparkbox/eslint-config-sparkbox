@@ -43,6 +43,11 @@ This will:
 - Use all commit messages since the latest version tag to determine the correct new version
 - Increment the version in package.json and package-lock.json
 - Create a tagged commit with the new version
+
+```sh
+npm run release:push
+```
+
 - Push your branch (and new tag) to the remote
 
 After your branch is merged, CI will take care of publishing to the npm registry.
