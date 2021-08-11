@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/sparkbox/eslint-config-sparkbox/compare/v1.1.4...v2.0.0) (2021-08-11)
+
+
+### Features
+
+* Remove flowtype ([9a01c90](https://github.com/sparkbox/eslint-config-sparkbox/commit/9a01c9055ba18d73211f04abf9a3e7f4c307cc3b))
+
 ### [1.1.3](https://github.com/sparkbox/eslint-config-sparkbox/compare/v1.1.1...v1.1.3) (2020-05-18)
 
 ### [1.1.2](https://github.com/sparkbox/eslint-config-sparkbox/compare/v1.1.1...v1.1.2) (2020-05-18)
