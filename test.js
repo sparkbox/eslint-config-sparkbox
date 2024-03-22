@@ -1,28 +1,24 @@
 const assert = require('assert');
-const Engine = require('eslint').CLIEngine;
+const { ESLint } = require("eslint");
 
-const cli = new Engine({
-  configFile: 'index.js',
+const cli = new ESLint({
+  overrideConfigFile: 'index.js',
 });
 
-const lint = text => cli.executeOnText(text);
+const lint = text => cli.lintText(text);
 
-describe('Non-react JS', function() {
-  it('Will pass', function() {
-    const test = lint(`
-const foo = 'foo';
-window.location(foo);\n`);
-
-    const message = test.errorCount > 0 && test.results[0].messages[0].message;
-
-    assert.equal(test.errorCount, 0, message);
+describe('Non-react JS', function () {
+  it('Will pass', async function () {
+    const test = await lint(`const foo = 'foo'; window.location(foo);\n`);
+    const message = test[0].errorCount > 0 && test[0].messages[0].message;
+    assert.equal(test[0].errorCount, 0, message);
   });
 });
 
-describe('React JS', function() {
-  it('Will pass', function() {
-    const test = cli.executeOnText(`
-import React, { Component } from 'react';
+describe('React JS', function () {
+  it('Will pass', async function () {
+    const test = await lint(
+      `import React, { Component } from 'react';
 
 export class Foo extends Component {
   constructor(props) {
@@ -34,10 +30,8 @@ export class Foo extends Component {
     return <p>Foo</p>;
   }
 }
-`);
-
-    const message = test.errorCount > 0 && test.results[0].messages[0].message;
-
-    assert.equal(test.errorCount, 0, message);
+` );
+    const message = test[0].errorCount > 0 && test[0].messages[0].message;
+    assert.equal(test[0].errorCount, 0, message);
   });
 });
